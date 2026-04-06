@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --color-primary: #E4211D;
+  --color-accent: #D4AF37;
+  --color-secondary-bg: #F4F4F4;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-sans bg-white text-black overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply font-serif text-4xl font-bold text-center mb-8;
+  }
+  .btn-primary {
+    @apply bg-[#E4211D] text-white px-8 py-3 rounded-md hover:bg-[#c91d19] transition-all duration-300 font-semibold;
+  }
+  .sticky-section {
+    @apply sticky top-0 h-screen flex items-center justify-center overflow-hidden;
+  }
+}
+
+/* Custom styles for Swiper */
+.swiper-pagination-bullet-active {
+  background: white !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 20px !important;
+  color: white !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
