@@ -1,20 +1,30 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const StackingSection = ({ title, image, reversed, bgClass, subTitle, highlight, textColor = "text-white", zIndex }) => {
+const StackingSection = ({ title, image, reversed, bgClass, subTitle, highlight, textColor = "text-white", zIndex, centerImage }) => {
   return (
     <section 
       style={{ zIndex }}
-      className={`sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden ${bgClass}`}
+      className={`sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden group ${bgClass}`}
     >
       <div className="absolute inset-0 z-0">
         <img 
           src={image} 
-          className="w-full h-full object-cover grayscale-[0.3] hover:grayscale-0 transition-all duration-1000 opacity-100" 
+          className="w-full h-full object-cover grayscale-[0.5] transition-all duration-1000 scale-105 group-hover:scale-110 group-hover:grayscale-0 opacity-60" 
           alt={title} 
         />
-        <div className={`absolute inset-0 bg-gradient-to-${reversed ? 'l' : 'r'} from-black/70 via-black/30 to-transparent`}></div>
+        <div className={`absolute inset-0 bg-gradient-to-${reversed ? 'l' : 'r'} from-black/80 via-black/40 to-transparent`}></div>
       </div>
+
+      {centerImage && (
+        <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
+          <img
+            src={centerImage}
+            className="w-[400px] md:w-[650px] lg:w-[850px] object-contain drop-shadow-[0_50px_50px_rgba(0,0,0,0.8)] opacity-100 scale-100"
+            alt="Featured Product"
+          />
+        </div>
+      )}
 
       <div className={`relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full flex flex-col ${reversed ? 'items-end text-right' : 'items-start text-left'}`}>
         <motion.div 
@@ -22,7 +32,7 @@ const StackingSection = ({ title, image, reversed, bgClass, subTitle, highlight,
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className={textColor}
+          className={`${textColor} group-hover:translate-x-${reversed ? '-4' : '4'} transition-transform duration-700`}
         >
           <p className="text-accent font-semibold tracking-[0.5em] text-sm md:text-base mb-2">{highlight}</p>
           <h2 className="text-6xl md:text-8xl lg:text-9xl font-serif font-black tracking-tight leading-none mb-6">
