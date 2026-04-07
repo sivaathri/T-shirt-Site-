@@ -20,7 +20,7 @@ const products = [
     discount: "5% OFF"
   },
   {
-    image: "https://images.unsplash.com/photo-1542491509-300135a15cf9?q=80&w=1770&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1594533055237-458633384d43?q=80&w=1770&auto=format&fit=crop",
     brand: "FOSSIL",
     name: "Modern Machine",
     price: "₹12,495",

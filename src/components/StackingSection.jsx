@@ -10,10 +10,10 @@ const StackingSection = ({ title, image, reversed, bgClass, subTitle, highlight,
       <div className="absolute inset-0 z-0">
         <img 
           src={image} 
-          className="w-full h-full object-cover grayscale-[0.5] hover:grayscale-0 transition-all duration-1000 opacity-80" 
+          className="w-full h-full object-cover grayscale-[0.3] hover:grayscale-0 transition-all duration-1000 opacity-100" 
           alt={title} 
         />
-        <div className={`absolute inset-0 bg-gradient-to-${reversed ? 'l' : 'r'} from-black/80 via-black/40 to-transparent`}></div>
+        <div className={`absolute inset-0 bg-gradient-to-${reversed ? 'l' : 'r'} from-black/70 via-black/30 to-transparent`}></div>
       </div>
 
       <div className={`relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full flex flex-col ${reversed ? 'items-end text-right' : 'items-start text-left'}`}>

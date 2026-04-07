@@ -6,6 +6,8 @@ import BrandBar from './components/BrandBar';
 import StackingSection from './components/StackingSection';
 import ProductGrid from './components/ProductGrid';
 import Footer from './components/Footer';
+import imgHer from './assets/img1.png';
+import imgHim from './assets/img2.png';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,36 +29,33 @@ function App() {
         <BrandBar />
         
         {/* Stacking Sections as requested by user */}
-        <div id="collections" className="relative">
-          <StackingSection 
-            title="FOR HIM" 
-            image="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=1780&auto=format&fit=crop"
-            reversed={false}
-            bgClass="bg-[#000000]"
-            subTitle="Elevate your style with timeless elegance"
-            highlight="LUXURY CHRONOGRAPHS"
-            zIndex={10}
-          />
-          <StackingSection 
-            title="FOR HER" 
-            image="https://images.unsplash.com/photo-1542491509-300135a15cf9?q=80&w=1770&auto=format&fit=crop"
-            reversed={true}
-            bgClass="bg-[#1a1a1a]"
-            textColor="text-white"
-            subTitle="Graceful designs for every occasion"
-            highlight="DIVINE COLLECTION"
-            zIndex={20}
-          />
-          <StackingSection 
-            title="SMART WATCHES" 
-            image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1999&auto=format&fit=crop"
-            reversed={false}
-            bgClass="bg-[#0a0a0a]"
-            textColor="text-white"
-            subTitle="The intersection of tech and tradition"
-            highlight="NEXT GEN TECH"
-            zIndex={30}
-          />
+        <div id="collections" className="relative bg-black">
+          {/* FOR HIM - Top layer (Moves as normal scroll) */}
+          <div className="h-[100vh] relative z-30">
+            <StackingSection 
+              title="FOR HIM" 
+              image={imgHim}
+              reversed={false}
+              bgClass="bg-[#000000]"
+              subTitle="Elevate your style with timeless elegance"
+              highlight="LUXURY CHRONOGRAPHS"
+              zIndex={30}
+            />
+          </div>
+
+          {/* FOR HER - Middle layer (Revealed immediately as HIM moves up) */}
+          <div className="h-[200vh] relative z-20 -mt-[100vh]">
+            <StackingSection 
+              title="FOR HER" 
+              image={imgHer}
+              reversed={true}
+              bgClass="bg-[#1a1a1a]"
+              textColor="text-white"
+              subTitle="Graceful designs for every occasion"
+              highlight="DIVINE COLLECTION"
+              zIndex={20}
+            />
+          </div>
         </div>
 
         <section className="py-20 bg-white">
