@@ -8,7 +8,6 @@ import ProductGrid from './components/ProductGrid';
 import Footer from './components/Footer';
 import imgHer from './assets/img1.png';
 import imgHim from './assets/5.png';
-import imgHimHover from './assets/2.png';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,7 +35,6 @@ function App() {
             <StackingSection 
               title="FOR HIM" 
               image={imgHim}
-              centerImage={imgHimHover}
               reversed={false}
               bgClass="bg-[#000000]"
               subTitle="Elevate your style with timeless elegance"
