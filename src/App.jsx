@@ -29,17 +29,20 @@ function App() {
         <BrandBar />
         
         {/* Stacking Sections as requested by user */}
-        <div id="collections" className="relative bg-black">
+        <div id="collections" className="relative bg-white">
           {/* FOR HIM - Top layer (Moves as normal scroll) */}
           <div className="h-[100vh] relative z-30">
             <StackingSection 
               title="FOR HIM" 
               image={imgHim}
               reversed={false}
-              bgClass="bg-[#000000]"
+              bgClass="bg-white"
+              textColor="text-black"
               subTitle="Elevate your style with timeless elegance"
               highlight="LUXURY CHRONOGRAPHS"
               zIndex={30}
+              showOverlay={false}
+              grayscale="grayscale-0"
             />
           </div>
 
