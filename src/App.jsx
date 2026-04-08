@@ -6,8 +6,8 @@ import BrandBar from './components/BrandBar';
 import StackingSection from './components/StackingSection';
 import ProductGrid from './components/ProductGrid';
 import Footer from './components/Footer';
-import imgHer from './assets/img1.png';
-import imgHim from './assets/5.png';
+import imgHer from './assets/1.png';
+import imgHim from './assets/2.png';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,8 +38,8 @@ function App() {
               reversed={false}
               bgClass="bg-white"
               textColor="text-black"
-              subTitle="Elevate your style with timeless elegance"
-              highlight="LUXURY CHRONOGRAPHS"
+              subTitle="Elevate your style with premium everyday comfort"
+              highlight="PREMIUM COLLECTION"
               zIndex={30}
               showOverlay={false}
               grayscale="grayscale-0"
@@ -55,7 +55,7 @@ function App() {
               bgClass="bg-[#1a1a1a]"
               textColor="text-white"
               subTitle="Graceful designs for every occasion"
-              highlight="DIVINE COLLECTION"
+              highlight="DIVINE TEES"
               zIndex={20}
             />
           </div>
@@ -80,14 +80,14 @@ function App() {
              <div className="flex flex-col md:flex-row gap-8 items-center bg-[#000000] text-white p-12 rounded-lg overflow-hidden relative">
                 <div className="flex-1 space-y-4 z-10 transition-transform duration-700 hover:scale-[1.02]">
                   <h3 className="text-3xl font-serif text-accent">TRUSTED BY MILLIONS</h3>
-                  <p className="text-gray-300 max-w-md">Experience excellence with official warranties and authentic timepieces from the world's leading brands.</p>
+                  <p className="text-gray-300 max-w-md">Experience unmatched comfort and style with our 100% authentic premium t-shirts from the world's leading fashion brands.</p>
                   <button className="btn-primary mt-4">DISCOVER OUR HERITAGE</button>
                 </div>
                 <div className="flex-1 relative group">
                   <img 
-                    src="https://images.unsplash.com/photo-1508685096489-7as10d18a00?q=80&w=1827&auto=format&fit=crop" 
+                    src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1827&auto=format&fit=crop" 
                     className="w-full h-80 object-cover rounded shadow-2xl transition-transform duration-700 group-hover:scale-110" 
-                    alt="Heritage" 
+                    alt="Our Heritage" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>

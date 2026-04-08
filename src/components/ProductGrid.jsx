@@ -4,68 +4,68 @@ import { motion } from 'framer-motion';
 
 const products = [
   {
-    image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1888&auto=format&fit=crop",
-    brand: "CASIO",
-    name: "Classic Chronograph MTP",
-    price: "₹4,995",
-    original: "₹5,500",
-    discount: "9% OFF"
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1888&auto=format&fit=crop",
+    brand: "H&M",
+    name: "Classic White Crew Neck",
+    price: "₹999",
+    original: "₹1,299",
+    discount: "23% OFF"
   },
   {
-    image: "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?q=80&w=1887&auto=format&fit=crop",
-    brand: "TISSOT",
-    name: "Tradition Powermatic 80",
-    price: "₹68,500",
-    original: "₹72,000",
-    discount: "5% OFF"
+    image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=1887&auto=format&fit=crop",
+    brand: "ZARA",
+    name: "Oversized Graphic Tee",
+    price: "₹1,499",
+    original: "₹1,999",
+    discount: "25% OFF"
   },
   {
-    image: "https://images.unsplash.com/photo-1594533055237-458633384d43?q=80&w=1770&auto=format&fit=crop",
-    brand: "FOSSIL",
-    name: "Modern Machine",
-    price: "₹12,495",
-    original: "₹14,000",
-    discount: "11% OFF"
+    image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1770&auto=format&fit=crop",
+    brand: "UNIQLO",
+    name: "Supima Cotton V-Neck",
+    price: "₹1,299",
+    original: "₹1,500",
+    discount: "13% OFF"
   },
   {
-    image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=1780&auto=format&fit=crop",
-    brand: "SEIKO",
-    name: "Presage Cocktail Time",
-    price: "₹42,000",
-    original: "₹45,000",
-    discount: "7% OFF"
+    image: "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?q=80&w=1780&auto=format&fit=crop",
+    brand: "PUMA",
+    name: "Essential Logo Tee",
+    price: "₹1,199",
+    original: "₹1,499",
+    discount: "20% OFF"
   },
   {
-    image: "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?q=80&w=1887&auto=format&fit=crop",
-    brand: "GARMIN",
-    name: "Fenix 7 Solar Sapphire",
-    price: "₹92,990",
-    original: "₹1,00,000",
-    discount: "7% OFF"
+    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1887&auto=format&fit=crop",
+    brand: "NIKE",
+    name: "Dri-FIT Training Tee",
+    price: "₹2,495",
+    original: "₹2,999",
+    discount: "17% OFF"
   },
   {
-    image: "https://images.unsplash.com/photo-1547996160-81dfa63595dd?q=80&w=1974&auto=format&fit=crop",
-    brand: "TITAN",
-    name: "Edge Ceramic Black",
-    price: "₹24,995",
-    original: "₹28,000",
-    discount: "11% OFF"
+    image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=1974&auto=format&fit=crop",
+    brand: "ADIDAS",
+    name: "Originals Trefoil Tee",
+    price: "₹1,799",
+    original: "₹2,199",
+    discount: "18% OFF"
   },
   {
-    image: "https://images.unsplash.com/photo-1508685096489-7as10d18a00?q=80&w=1827&auto=format&fit=crop",
-    brand: "ROLEX",
-    name: "Submariner Date 41mm",
-    price: "₹12,45,000",
-    original: "₹13,00,000",
-    discount: "4% OFF"
+    image: "https://images.unsplash.com/photo-1484662020986-75935d2ebc66?q=80&w=1827&auto=format&fit=crop",
+    brand: "LEVIS",
+    name: "Vintage Relaxed Fit Tee",
+    price: "₹1,599",
+    original: "₹1,999",
+    discount: "20% OFF"
   },
   {
-    image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=1999&auto=format&fit=crop",
-    brand: "OMEGA",
-    name: "Seamaster Aqua Terra",
-    price: "₹5,42,000",
-    original: "₹5,80,000",
-    discount: "7% OFF"
+    image: "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?q=80&w=1999&auto=format&fit=crop",
+    brand: "GAP",
+    name: "100% Cotton Pocket Tee",
+    price: "₹1,099",
+    original: "₹1,399",
+    discount: "21% OFF"
   }
 ];
 

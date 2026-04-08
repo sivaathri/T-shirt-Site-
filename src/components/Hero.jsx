@@ -11,24 +11,24 @@ import 'swiper/css/effect-fade';
 
 const banners = [
   {
-    image: "https://images.unsplash.com/photo-1547996160-81dfa63595dd?q=80&w=1974&auto=format&fit=crop",
-    title: "TIMELESS PRECISION",
-    sub: "LATEST CASIO COLLECTION",
+    image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=1974&auto=format&fit=crop",
+    title: "WEAR YOUR STORY",
+    sub: "NEW SEASON GRAPHIC TEES",
     accent: "EXCLUSIVELY AT SWISS HOUSE",
-    link: "SHOP CASIO"
+    link: "SHOP NOW"
   },
   {
-    image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=1999&auto=format&fit=crop",
-    title: "LUXURY REDEFINED",
-    sub: "THE ROLEX HERITAGE",
-    accent: "ICONIC TIMEPIECES",
-    link: "EXPLORE ROLEX"
+    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1999&auto=format&fit=crop",
+    title: "PREMIUM COMFORT",
+    sub: "CRAFTED FOR EVERYDAY STYLE",
+    accent: "ICONIC COLLECTIONS",
+    link: "EXPLORE TEES"
   },
   {
-    image: "https://images.unsplash.com/photo-1548171916-042bd4fe8857?q=80&w=1958&auto=format&fit=crop",
-    title: "ELEGANCE UNVEILED",
-    sub: "PREMIUM WOMEN'S WATCHES",
-    accent: "MODERN CLASSICS",
+    image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=1958&auto=format&fit=crop",
+    title: "FRESH ARRIVALS",
+    sub: "PREMIUM WOMEN'S COLLECTION",
+    accent: "MODERN ESSENTIALS",
     link: "SHOP WOMEN'S"
   }
 ];
